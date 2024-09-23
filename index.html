@@ -23,19 +23,19 @@
         .container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 10px;
         }
         header {
             background-color: #ffffff;
-            padding: 20px;
+            padding: 15px 10px;
             text-align: center;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
         h1 {
             color: #2c3e50;
-            font-size: 2.2rem;
+            font-size: 1.8rem;
             margin-bottom: 5px;
             font-family: 'Eveleth Bold', sans-serif;
             letter-spacing: 1px;
@@ -43,7 +43,7 @@
         }
         .sing-along {
             font-family: 'Fredoka One', cursive;
-            font-size: 2.5rem;
+            font-size: 2rem;
             color: #e74c3c;
             margin-top: 5px;
         }
@@ -53,46 +53,64 @@
         }
         .song-item {
             background-color: #ffffff;
-            margin-bottom: 15px;
-            padding: 15px 20px;
+            margin-bottom: 10px;
+            padding: 10px;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.08);
             display: flex;
             align-items: center;
-            transition: transform 0.2s ease-in-out;
-        }
-        .song-item:hover {
-            transform: translateY(-3px);
+            font-size: 0.9rem;
         }
         .song-number {
-            font-size: 1.2rem;
             font-weight: bold;
             color: #3498db;
-            margin-right: 15px;
-            min-width: 25px;
+            margin-right: 5px;
+            min-width: 20px;
+        }
+        .song-icon {
+            margin-right: 5px;
         }
         .song-link {
             color: #2c3e50;
             text-decoration: none;
             font-weight: 600;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-right: 5px;
         }
         .song-artist {
-            font-size: 0.9rem;
             color: #7f8c8d;
-            margin-left: auto;
-        }
-        .song-icon {
-            font-size: 1.5rem;
-            margin-right: 10px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            flex-shrink: 1;
         }
         @media (max-width: 600px) {
+            .container {
+                padding: 5px;
+            }
+            header {
+                padding: 10px 5px;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            .sing-along {
+                font-size: 1.8rem;
+            }
             .song-item {
-                flex-direction: column;
-                align-items: flex-start;
+                padding: 8px;
+                font-size: 0.8rem;
+            }
+            .song-number {
+                min-width: 15px;
+            }
+            .song-link {
+                max-width: 40%;
             }
             .song-artist {
-                margin-left: 40px;
-                margin-top: 5px;
+                max-width: 30%;
             }
         }
     </style>
@@ -105,91 +123,91 @@
         </header>
         <ol class="song-list">
             <li class="song-item">
-                <span class="song-number">1</span>
+                <span class="song-number">1.</span>
                 <span class="song-icon">🤿</span>
                 <a href="https://www.azlyrics.com/lyrics/beatles/yellowsubmarine.html" target="_blank" class="song-link">Yellow Submarine</a>
                 <span class="song-artist">by The Beatles</span>
             </li>
             <li class="song-item">
-                <span class="song-number">2</span>
+                <span class="song-number">2.</span>
                 <span class="song-icon">🎵</span>
                 <a href="https://www.azlyrics.com/lyrics/beatles/obladioblada.html" target="_blank" class="song-link">Ob-La-Di, Ob-La-Da</a>
                 <span class="song-artist">by The Beatles</span>
             </li>
             <li class="song-item">
-                <span class="song-number">3</span>
+                <span class="song-number">3.</span>
                 <span class="song-icon">🐉</span>
                 <a href="https://www.azlyrics.com/lyrics/peterpaulandmary/puffthemagicdragon.html" target="_blank" class="song-link">Puff, the Magic Dragon</a>
                 <span class="song-artist">by Peter, Paul and Mary</span>
             </li>
             <li class="song-item">
-                <span class="song-number">4</span>
+                <span class="song-number">4.</span>
                 <span class="song-icon">🥧</span>
                 <a href="https://www.azlyrics.com/lyrics/donmclean/americanpie.html" target="_blank" class="song-link">American Pie</a>
                 <span class="song-artist">by Don McLean</span>
             </li>
             <li class="song-item">
-                <span class="song-number">5</span>
+                <span class="song-number">5.</span>
                 <span class="song-icon">✨</span>
                 <a href="https://www.azlyrics.com/lyrics/journey/dontstopbelievin.html" target="_blank" class="song-link">Don't Stop Believin'</a>
                 <span class="song-artist">by Journey</span>
             </li>
             <li class="song-item">
-                <span class="song-number">6</span>
+                <span class="song-number">6.</span>
                 <span class="song-icon">👋</span>
                 <a href="https://www.azlyrics.com/lyrics/beatles/heyjude.html" target="_blank" class="song-link">Hey Jude</a>
                 <span class="song-artist">by The Beatles</span>
             </li>
             <li class="song-item">
-                <span class="song-number">7</span>
+                <span class="song-number">7.</span>
                 <span class="song-icon">🎸</span>
                 <a href="https://www.azlyrics.com/lyrics/joanjetttheblackhearts/iloverockandroll.html" target="_blank" class="song-link">I Love Rock 'n' Roll</a>
                 <span class="song-artist">by Joan Jett & the Blackhearts</span>
             </li>
             <li class="song-item">
-                <span class="song-number">8</span>
+                <span class="song-number">8.</span>
                 <span class="song-icon">💪</span>
                 <a href="https://www.azlyrics.com/lyrics/gloriagaynor/iwillsurvive.html" target="_blank" class="song-link">I Will Survive</a>
                 <span class="song-artist">by Gloria Gaynor</span>
             </li>
             <li class="song-item">
-                <span class="song-number">9</span>
+                <span class="song-number">9.</span>
                 <span class="song-icon">🌟</span>
                 <a href="https://www.azlyrics.com/lyrics/johnlennon/imagine.html" target="_blank" class="song-link">Imagine</a>
                 <span class="song-artist">by John Lennon</span>
             </li>
             <li class="song-item">
-                <span class="song-number">10</span>
+                <span class="song-number">10.</span>
                 <span class="song-icon">🌈</span>
                 <a href="https://www.azlyrics.com/lyrics/judygarland/overtherainbow.html" target="_blank" class="song-link">Over the Rainbow</a>
                 <span class="song-artist">by Judy Garland</span>
             </li>
             <li class="song-item">
-                <span class="song-number">11</span>
+                <span class="song-number">11.</span>
                 <span class="song-icon">🤝</span>
                 <a href="https://www.azlyrics.com/lyrics/billwithers/leanonme.html" target="_blank" class="song-link">Lean on Me</a>
                 <span class="song-artist">by Bill Withers</span>
             </li>
             <li class="song-item">
-                <span class="song-number">12</span>
+                <span class="song-number">12.</span>
                 <span class="song-icon">🦁</span>
                 <a href="https://www.azlyrics.com/lyrics/tokens/thelionsleepstonight.html" target="_blank" class="song-link">The Lion Sleeps Tonight</a>
                 <span class="song-artist">by The Tokens</span>
             </li>
             <li class="song-item">
-                <span class="song-number">13</span>
+                <span class="song-number">13.</span>
                 <span class="song-icon">👑</span>
                 <a href="https://www.azlyrics.com/lyrics/queen/wewillrockyou.html" target="_blank" class="song-link">We Will Rock You</a>
                 <span class="song-artist">by Queen</span>
             </li>
             <li class="song-item">
-                <span class="song-number">14</span>
+                <span class="song-number">14.</span>
                 <span class="song-icon">🌍</span>
                 <a href="https://www.azlyrics.com/lyrics/louisarmstrong/whataawonderfulworld.html" target="_blank" class="song-link">What a Wonderful World</a>
                 <span class="song-artist">by Louis Armstrong</span>
             </li>
             <li class="song-item">
-                <span class="song-number">15</span>
+                <span class="song-number">15.</span>
                 <span class="song-icon">🇺🇸</span>
                 <a href="https://www.azlyrics.com/lyrics/woodyguthrie/thislandisyourland.html" target="_blank" class="song-link">This Land Is Your Land</a>
                 <span class="song-artist">by Woody Guthrie</span>
